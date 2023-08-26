@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
-import { ship } from 'src/ships';
 import { getCountryOfOrigin, useFlexibleSizes } from 'src/utils';
+import { ship } from 'src/utils/types';
 
 const useClasses = makeStyles(() => ({
   card: {

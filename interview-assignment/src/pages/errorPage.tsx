@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Typography, Button, Box, Stack, useTheme, useMediaQuery } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const ErrorPage: React.FC = () => {
   const theme = useTheme();
@@ -13,9 +14,9 @@ const ErrorPage: React.FC = () => {
         <Typography variant='body1'>
           We apologize for the inconvenience. Please try again later.
         </Typography>
-        <Button variant='contained' href='/'>
-          Go Back to Home
-        </Button>
+        <Link to='/' style={{ textDecoration: 'none' }}>
+          <Button variant='contained'>Go Back to Home</Button>
+        </Link>
       </Box>
     </Stack>
   );

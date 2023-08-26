@@ -1,13 +1,20 @@
-export type ship = {
-  id: number;
-  built: number;
-  name: string;
-  lengthMeters: number;
-  beamMeters: number;
-  maxTEU: number;
-  owner: string;
-  grossTonnage: number | string;
-};
+import { createServer } from 'miragejs';
+
+import { ship } from 'src/utils/types';
+
+export function makeServer() {
+  const server = createServer({
+    routes() {
+      this.namespace = 'api';
+
+      this.get('/ships', () => ships);
+
+      this.timing = 2000;
+    },
+  });
+
+  return server;
+}
 
 const ships: ship[] = [
   {
@@ -1661,5 +1668,3 @@ const ships: ship[] = [
     grossTonnage: 140259,
   },
 ];
-
-export default ships;

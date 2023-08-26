@@ -1,8 +1,8 @@
 import { Stack } from '@mui/system';
 import { Grid } from '@mui/material';
 
-import { ship } from 'src/ships';
 import ShipCard from 'src/components/shipList/shipCard';
+import { ship } from 'src/utils/types';
 
 type shipListProps = { ships: ship[] };
 

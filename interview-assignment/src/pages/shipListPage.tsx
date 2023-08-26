@@ -1,15 +1,16 @@
+import { Box, CircularProgress } from '@mui/material';
 import { useState } from 'react';
 
 import HeadBand from 'src/components/shipList/headBand';
 import ShipListPagination from 'src/components/shipList/pagination';
-import ships from 'src/ships';
 import ShipList from 'src/components/shipList/shipList';
+import useStore from 'src/store';
 import { useFlexibleSizes } from 'src/utils';
 
 const ShipListPage: React.FC = () => {
   const itemsPerPage = useFlexibleSizes({ xxs: 5, xs: 5, sm: 10, md: 15, lg: 20 });
-
   const [currentPage, setCurrentPage] = useState(1);
+  const { isLoading, ships } = useStore();
 
   const handleChangePage = (event: React.ChangeEvent<unknown>, newPage: number) => {
     setCurrentPage(newPage);
@@ -22,7 +23,13 @@ const ShipListPage: React.FC = () => {
   return (
     <main>
       <HeadBand />
-      <ShipList ships={currentShips} />
+      {!isLoading ? (
+        <ShipList ships={currentShips} />
+      ) : (
+        <Box display='flex' justifyContent='center' alignItems='center' height='80vh'>
+          <CircularProgress size={60} thickness={4} />
+        </Box>
+      )}
       <ShipListPagination
         count={Math.ceil(ships.length / itemsPerPage)}
         currentPage={currentPage}

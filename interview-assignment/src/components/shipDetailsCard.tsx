@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Button, Paper, Typography, useMediaQuery, useTheme } from '@mui/material';
 
-import { ship } from 'src/ships';
 import { getCountryOfOrigin } from 'src/utils';
+import { ship } from 'src/utils/types';
 
 type ShipDetailsCardProps = {
   ship: ship;

@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import ships from 'src/ships';
 import ShipDetailsCard from 'src/components/shipDetailsCard';
+import useStore from 'src/store';
 
 const ShipInfo: React.FC = () => {
   const navigate = useNavigate();
   const { shipId } = useParams();
-  const ship = ships.find((s) => s.id === Number(shipId));
+  const ship = useStore().ships.find((s) => s.id === Number(shipId));
 
   useEffect(() => {
     if (!ship) {
