@@ -19,9 +19,8 @@ type sizes<T> = {
 
 export const useFlexibleSizes = <T>(sizes: sizes<T>) => {
   const theme = useTheme();
-  type el = { useMediaQueryResult: boolean; type: size };
 
-  const smth1: el[] = [
+  const breakpointsMap: { useMediaQueryResult: boolean; type: size }[] = [
     {
       useMediaQueryResult: useMediaQuery(theme.breakpoints.up('lg')),
       type: 'lg',
@@ -43,8 +42,9 @@ export const useFlexibleSizes = <T>(sizes: sizes<T>) => {
       type: 'xxs',
     },
   ];
+  console.log({ breakpointsMap });
 
-  const res = smth1.find((s) => s.useMediaQueryResult);
+  const matchingBreakpoint = breakpointsMap.find((s) => s.useMediaQueryResult);
 
-  return res ? sizes[res.type] : sizes.xxs;
+  return matchingBreakpoint ? sizes[matchingBreakpoint.type] : sizes.xxs;
 };
