@@ -8,7 +8,7 @@ type shipListProps = { ships: ship[] };
 
 const ShipList: React.FC<shipListProps> = ({ ships }) => {
   return (
-    <Grid container spacing={2} height={'80%'} padding={2} paddingBottom={8}>
+    <Grid container spacing={2} padding={2} paddingBottom={8}>
       {ships.map((ship) => (
         <Grid key={String(ship.id)} item xs={12} sm={6} md={4} lg={3}>
           <Stack alignItems='center' justifyContent='center'>
