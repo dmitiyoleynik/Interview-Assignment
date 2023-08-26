@@ -17,6 +17,9 @@ const useStore = create<store>((set) => ({
       .then((response) => response.json())
       .then((data) => {
         set({ isLoading: false, ships: data });
+      })
+      .catch(() => {
+        set({ isLoading: false });
       });
   },
 }));
