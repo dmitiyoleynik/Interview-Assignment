@@ -59,7 +59,7 @@ To deploy the "Overview of Container Ships" website in a production environment 
 2. **Clone the Repository:**
    Clone the repository to your local machine and navigate to the project's root folder:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/dmitiyoleynik/Interview-Assignment
 
 3. **Run json-server like showed in For Development:**
 4. **Run Docker Compose:**
