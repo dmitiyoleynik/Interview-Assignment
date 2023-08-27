@@ -13,7 +13,7 @@ const useStore = create<store>((set) => ({
   ships: [],
   fetchShips: async () => {
     set({ isLoading: true });
-    fetch('/api/ships')
+    fetch('http://localhost:3000/ships')
       .then((response) => response.json())
       .then((data) => {
         set({ isLoading: false, ships: data });

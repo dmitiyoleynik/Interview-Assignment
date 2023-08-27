@@ -49,3 +49,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 docker build -t react-app .
 
 docker run -p 3000:3000 react-app
+docker run -p 80:80 --name react-app app-prod

@@ -1,0 +1,9 @@
+services:
+  react-app:
+      container_name: react-app-prod
+      build:
+        context: .
+        dockerfile: Dockerfile.prod
+      ports: 
+        - "80:80"
+
