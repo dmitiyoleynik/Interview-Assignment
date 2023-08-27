@@ -14,6 +14,7 @@ const ShipDetailsCard: React.FC<ShipDetailsCardProps> = ({ ship }) => {
 
   return (
     <Paper
+      data-testid={`ship-${ship.id}`}
       sx={{
         maxWidth: isMobile ? '100%' : 400,
         margin: '0 auto',
