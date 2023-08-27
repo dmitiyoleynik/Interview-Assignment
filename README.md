@@ -1,52 +1,71 @@
-# Getting Started with Create React App
+# Overview of Container Ships
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The "Overview of Container Ships" project aims to provide users with a comprehensive view of container ships around the world. Leveraging an available API that supplies the necessary data, this project entails creating a website with two distinct pages. The start page serves as the entry point, showcasing an ordered list of container ships along with key details such as name, country of origin, and TEU (Twenty-foot Equivalent Unit) capacity. Upon selecting a specific ship, users are seamlessly redirected to a detailed page displaying comprehensive information about the chosen vessel.
 
-## Available Scripts
+## Project Goals
 
-In the project directory, you can run:
+The main objectives of the "Overview of Container Ships" project include:
 
-### `yarn start`
+1. **Data Retrieval:** Upon opening the website, it instantaneously fetches relevant data from the designated API source and presents it in an organized manner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. **Responsive Design:** The website's layout and interface are optimized to look visually appealing and function seamlessly on both desktop and mobile devices, ensuring consistent user experiences across screen sizes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `yarn test`
+The project encompasses the following key features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Ship List:** The website's starting page displays a list of container ships, including their names, countries of origin, and TEU capacity.
 
-### `yarn build`
+- **Detailed Ship Page:** Upon selecting a specific ship from the list, users are directed to an in-depth page dedicated to that ship. This page presents an extensive array of data related to the ship's technical specifications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### For Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the "Overview of Container Ships" website in the development environment, follow these steps:
 
-### `yarn eject`
+```bash
+# 1. Clone the repository to your local machine:
+git clone <repository-url>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 2. Make sure you have json-server installed on your computer. If not, install it:
+npm install -g json-server
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 3. Navigate to the project directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# 4. Start the JSON Server with:
+json-server --watch server/db.json --port 3001 -d 2000
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# 5. Install dependencies using npm or yarn:
+npm install
+# or
+yarn
 
-## Learn More
+# 6. Start the React app:
+npm start
+# or
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Production Deployment with Docker Compose
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To deploy the "Overview of Container Ships" website in a production environment using Docker Compose, follow these steps:
+
+1. **Check Docker and Docker Compose Installation:**
+   Before proceeding, ensure that you have both Docker and Docker Compose installed on your system. If not, you can download and install them from the official Docker website:
+   - [Get Docker](https://www.docker.com/get-started)
+   - [Install Docker Compose](https://docs.docker.com/compose/install/)
+
+2. **Clone the Repository:**
+   Clone the repository to your local machine and navigate to the project's root folder:
+   ```bash
+   git clone <repository_url>
+
+3. **Run json-server like showed in For Development:**
+4. **Run Docker Compose:**
+    ```bash docker-compose up```
+5. **View the Deployed Website**
+    Open your web browser and navigate to http://localhost to view the deployed "Overview of Container Ships" website.
 
 
-docker build -t react-app .
 
-docker run -p 3000:3000 react-app
-docker run -p 80:80 --name react-app app-prod
