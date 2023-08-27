@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import { Button, Paper, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 import { getCountryOfOrigin } from 'src/utils';
-import { ship } from 'src/utils/types';
+import { Ship } from 'src/utils/types';
 
 type ShipDetailsCardProps = {
-  ship: ship;
+  ship: Ship;
 };
 
 const ShipDetailsCard: React.FC<ShipDetailsCardProps> = ({ ship }) => {

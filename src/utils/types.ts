@@ -1,4 +1,4 @@
-export type ship = {
+export type Ship = {
   id: number;
   built: number;
   name: string;

@@ -4,7 +4,7 @@ import { Card, CardContent, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 import { getCountryOfOrigin, useFlexibleSizes } from 'src/utils';
-import { ship } from 'src/utils/types';
+import { Ship } from 'src/utils/types';
 
 const useClasses = makeStyles(() => ({
   card: {
@@ -18,7 +18,7 @@ const useClasses = makeStyles(() => ({
   },
 }));
 
-const ShipCard: React.FC<{ ship: ship }> = ({ ship }) => {
+const ShipCard: React.FC<{ ship: Ship }> = ({ ship }) => {
   const classes = useClasses();
   const width = useFlexibleSizes({
     xxs: 200,

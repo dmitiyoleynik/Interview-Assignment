@@ -1,14 +1,14 @@
 import { create } from 'zustand';
 
-import { ship } from 'src/utils/types';
+import { Ship } from 'src/utils/types';
 
-type store = {
+type Store = {
   isLoading: boolean;
-  ships: ship[];
+  ships: Ship[];
   fetchShips: () => Promise<void>;
 };
 
-const useStore = create<store>((set) => ({
+const useStore = create<Store>((set) => ({
   isLoading: false,
   ships: [],
   fetchShips: async () => {

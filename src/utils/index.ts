@@ -3,43 +3,46 @@ import { useMediaQuery, useTheme } from '@mui/material';
 export const getCountryOfOrigin = (shipOwner: string) => {
   const regex = /\(([^)]+)\)/;
   const matches = regex.exec(shipOwner);
+  const matchIndex = 1;
 
-  return matches && matches[1];
+  return matches?.[matchIndex];
 };
 
-type size = 'xxs' | 'xs' | 'sm' | 'md' | 'lg';
+enum Size {
+  'xxs' = 'xxs',
+  'xs' = 'xs',
+  'sm' = 'sm',
+  'md' = 'md',
+  'lg' = 'lg',
+}
 
-type sizes<T> = {
-  xxs: T;
-  xs: T;
-  sm: T;
-  md: T;
-  lg: T;
+type Sizes<T> = {
+  [key in Size]: T;
 };
 
-export const useFlexibleSizes = <T>(sizes: sizes<T>) => {
+export const useFlexibleSizes = <T>(sizes: Sizes<T>) => {
   const theme = useTheme();
 
-  const breakpointsMap: { useMediaQueryResult: boolean; type: size }[] = [
+  const breakpointsMap: { useMediaQueryResult: boolean; type: Size }[] = [
     {
       useMediaQueryResult: useMediaQuery(theme.breakpoints.up('lg')),
-      type: 'lg',
+      type: Size.lg,
     },
     {
       useMediaQueryResult: useMediaQuery(theme.breakpoints.up('md')),
-      type: 'md',
+      type: Size.md,
     },
     {
       useMediaQueryResult: useMediaQuery(theme.breakpoints.up('sm')),
-      type: 'sm',
+      type: Size.sm,
     },
     {
       useMediaQueryResult: useMediaQuery(theme.breakpoints.up(280)),
-      type: 'xs',
+      type: Size.xs,
     },
     {
       useMediaQueryResult: useMediaQuery(theme.breakpoints.down(280)),
-      type: 'xxs',
+      type: Size.xxs,
     },
   ];
   console.log({ breakpointsMap });

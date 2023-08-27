@@ -2,11 +2,11 @@ import { Stack } from '@mui/system';
 import { Grid } from '@mui/material';
 
 import ShipCard from 'src/components/shipList/shipCard';
-import { ship } from 'src/utils/types';
+import { Ship } from 'src/utils/types';
 
-type shipListProps = { ships: ship[] };
+type ShipListProps = { ships: Ship[] };
 
-const ShipList: React.FC<shipListProps> = ({ ships }) => {
+const ShipList: React.FC<ShipListProps> = ({ ships }) => {
   return (
     <Grid container spacing={2} padding={2} paddingBottom={8}>
       {ships.map((ship) => (
