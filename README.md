@@ -24,28 +24,37 @@ The project encompasses the following key features:
 
 To run the "Overview of Container Ships" website in the development environment, follow these steps:
 
-```bash
+
 # 1. Clone the repository to your local machine:
-git clone <repository-url>
-
+```bash 
+git clone https://github.com/dmitiyoleynik/Interview-Assignment
+```
 # 2. Make sure you have json-server installed on your computer. If not, install it:
+```bash
 npm install -g json-server
-
+```
 # 3. Navigate to the project directory
 
 # 4. Start the JSON Server with:
+```bash
 json-server --watch server/db.json --port 3001 -d 2000
+```
 
 # 5. Install dependencies using npm or yarn:
+```bash
 npm install
-# or
-yarn
-
-# 6. Start the React app:
-npm start
-# or
-yarn start
 ```
+# or
+```bash
+yarn
+```
+# 6. Start the React app:
+```bash
+npm start```
+# or
+```bash
+yarn start```
+
 
 ### Production Deployment with Docker Compose
 
@@ -61,11 +70,10 @@ To deploy the "Overview of Container Ships" website in a production environment 
    ```bash
    git clone https://github.com/dmitiyoleynik/Interview-Assignment
 
-3. **Run json-server like showed in For Development:**
+3. **Run json-server like showed in For Development part**
 4. **Run Docker Compose:**
-    ```bash docker-compose up```
-5. **View the Deployed Website**
-    Open your web browser and navigate to http://localhost to view the deployed "Overview of Container Ships" website.
+    ```docker-compose up```
+
 
 
 
