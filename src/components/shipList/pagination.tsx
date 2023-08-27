@@ -10,10 +10,10 @@ type ShipListPaginationProps = {
 const ShipListPagination: React.FC<ShipListPaginationProps> = (props) => {
   const size = useFlexibleSizes<'small' | 'medium' | 'large'>({
     xs: 'medium',
-    xxs: 'medium',
     sm: 'large',
     md: 'large',
     lg: 'large',
+    xl: 'large',
   });
 
   return (

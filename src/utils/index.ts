@@ -1,4 +1,4 @@
-import { useMediaQuery, useTheme } from '@mui/material';
+import { Breakpoint, useMediaQuery, useTheme } from '@mui/material';
 
 export const getCountryOfOrigin = (shipOwner: string) => {
   const regex = /\(([^)]+)\)/;
@@ -8,46 +8,17 @@ export const getCountryOfOrigin = (shipOwner: string) => {
   return matches?.[matchIndex];
 };
 
-enum Size {
-  'xxs' = 'xxs',
-  'xs' = 'xs',
-  'sm' = 'sm',
-  'md' = 'md',
-  'lg' = 'lg',
-}
-
-type Sizes<T> = {
-  [key in Size]: T;
-};
-
-export const useFlexibleSizes = <T>(sizes: Sizes<T>) => {
+export const useFlexibleSizes = <T>(sizes: {
+  [key in Breakpoint]: T;
+}) => {
   const theme = useTheme();
 
-  const breakpointsMap: { useMediaQueryResult: boolean; type: Size }[] = [
-    {
-      useMediaQueryResult: useMediaQuery(theme.breakpoints.up('lg')),
-      type: Size.lg,
-    },
-    {
-      useMediaQueryResult: useMediaQuery(theme.breakpoints.up('md')),
-      type: Size.md,
-    },
-    {
-      useMediaQueryResult: useMediaQuery(theme.breakpoints.up('sm')),
-      type: Size.sm,
-    },
-    {
-      useMediaQueryResult: useMediaQuery(theme.breakpoints.up(280)),
-      type: Size.xs,
-    },
-    {
-      useMediaQueryResult: useMediaQuery(theme.breakpoints.down(280)),
-      type: Size.xxs,
-    },
-  ];
-  console.log({ breakpointsMap });
+  const currentBreakpoint = Object.keys(sizes)
+    .map((key) => {
+      return { key: key, value: useMediaQuery(theme.breakpoints.up(key as Breakpoint)) };
+    })
+    .reverse()
+    .find((br) => br.value)?.key;
 
-  const matchingBreakpoint = breakpointsMap.find((s) => s.useMediaQueryResult);
-
-  return matchingBreakpoint ? sizes[matchingBreakpoint.type] : sizes.xxs;
+  return sizes[currentBreakpoint as Breakpoint];
 };

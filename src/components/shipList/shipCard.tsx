@@ -21,11 +21,11 @@ const useClasses = makeStyles(() => ({
 const ShipCard: React.FC<{ ship: Ship }> = ({ ship }) => {
   const classes = useClasses();
   const width = useFlexibleSizes({
-    xxs: 200,
     xs: 270,
     sm: 290,
     md: 290,
     lg: 290,
+    xl: 290,
   });
   return (
     <Link to={`ships/${ship.id}`} className={classes.link}>
