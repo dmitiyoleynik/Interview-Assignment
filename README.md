@@ -41,19 +41,15 @@ json-server --watch server/db.json --port 3001 -d 2000
 ```
 
 #### 5. Install dependencies using npm or yarn:
-```bash
-npm install
 ```
-#### or
-```bash
+npm install
+or
 yarn
 ```
 #### 6. Start the React app:
 ```
 npm start
-```
-#### or
-```
+or
 yarn start
 ```
 
