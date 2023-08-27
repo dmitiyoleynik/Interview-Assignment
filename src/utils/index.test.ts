@@ -14,6 +14,6 @@ describe('getCountryOfOrigin test', () => {
 
     const country = getCountryOfOrigin(owner);
 
-    expect(country).toBeNull();
+    expect(country).toBeUndefined();
   });
 });

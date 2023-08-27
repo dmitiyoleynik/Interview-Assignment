@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` MyComponent should match snapshot 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1sdcbww-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+  >
+    <div
+      className="MuiStack-root css-1z0rh7t-MuiStack-root"
+    >
+      <a
+        className="makeStyles-link-2"
+        href="/ships/2"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-uzaqbr-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              OOCL Germany
+            </h6>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Country: 
+              Hong Kong
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              TEU: 
+              21413
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` ShipList should match snapshot 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1sdcbww-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+  >
+    <div
+      className="MuiStack-root css-1z0rh7t-MuiStack-root"
+    >
+      <a
+        className="makeStyles-link-2"
+        href="/ships/2"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-uzaqbr-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              OOCL Germany
+            </h6>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Country: 
+              Hong Kong
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              TEU: 
+              21413
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ShipList should match snapshot 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1sdcbww-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+  >
+    <div
+      className="MuiStack-root css-1z0rh7t-MuiStack-root"
+    >
+      <a
+        className="makeStyles-link-2"
+        href="/ships/2"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-uzaqbr-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              OOCL Germany
+            </h6>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Country: 
+              Hong Kong
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              TEU: 
+              21413
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ShipList should match snapshot with many ships 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1sdcbww-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+  >
+    <div
+      className="MuiStack-root css-1z0rh7t-MuiStack-root"
+    >
+      <a
+        className="makeStyles-link-2"
+        href="/ships/2"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-uzaqbr-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              OOCL Germany
+            </h6>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Country: 
+              Hong Kong
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              TEU: 
+              21413
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+  >
+    <div
+      className="MuiStack-root css-1z0rh7t-MuiStack-root"
+    >
+      <a
+        className="makeStyles-link-2"
+        href="/ships/3"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-uzaqbr-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              OOCL Japan
+            </h6>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Country: 
+              Hong Kong
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              TEU: 
+              21413
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ShipList should match snapshot with one ship 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1sdcbww-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+  >
+    <div
+      className="MuiStack-root css-1z0rh7t-MuiStack-root"
+    >
+      <a
+        className="makeStyles-link-2"
+        href="/ships/2"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-uzaqbr-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              OOCL Germany
+            </h6>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Country: 
+              Hong Kong
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              TEU: 
+              21413
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ShipList should match snapshot with zero ship 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1sdcbww-MuiGrid-root"
+/>
+`;
