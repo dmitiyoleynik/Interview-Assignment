@@ -8,8 +8,7 @@ import useStore from 'src/store';
 import { useFlexibleSizes } from 'src/utils';
 
 const ShipListPage: React.FC = () => {
-  // const itemsPerPage = useFlexibleSizes({ xs: 5, sm: 10, md: 15, lg: 20, xl: 20 });
-  const itemsPerPage = 20;
+  const itemsPerPage = useFlexibleSizes({ xs: 5, sm: 10, md: 15, lg: 20, xl: 20 });
   const [currentPage, setCurrentPage] = useState(1);
   const { isLoading, ships } = useStore();
 

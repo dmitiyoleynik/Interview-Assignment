@@ -1,7 +1,7 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import ShipInfo from './shipInfo';
+
+import ShipInfo from 'src/pages/shipInfo';
 
 jest.mock('src/store', () => ({
   __esModule: true,
@@ -70,5 +70,6 @@ test('ShipInfo navigates to /error when ship is not found', () => {
   );
 
   const errorPage = getByText('Error Page');
+
   expect(errorPage).toBeInTheDocument();
 });
