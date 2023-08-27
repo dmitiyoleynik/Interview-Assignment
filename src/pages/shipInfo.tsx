@@ -15,7 +15,7 @@ const ShipInfo: React.FC = () => {
     }
   }, [navigate, ship]);
 
-  return ship ? <ShipDetailsCard ship={ship} /> : <></>;
+  return ship ? <ShipDetailsCard ship={ship} /> : null;
 };
 
 export default ShipInfo;
