@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShipDetailsCard should match snapshot 1`] = `
+<div
+  className="MuiStack-root css-g47iu7-MuiStack-root"
+>
+  <div
+    className="MuiBox-root css-xi606m"
+  >
+    <h4
+      className="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
+    >
+      Oops! Something went wrong.
+    </h4>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+    >
+      We apologize for the inconvenience. Please try again later.
+    </p>
+    <a
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        Go Back to Home
+      </button>
+    </a>
+  </div>
+</div>
+`;
