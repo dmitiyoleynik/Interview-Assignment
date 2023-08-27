@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 import ShipListPage from 'src/pages/shipListPage';
 import ShipInfo from 'src/pages/shipInfo';
@@ -14,14 +14,14 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <BrowserRouter>
       <CssBaseline />
       <Routes>
         <Route index element={<ShipListPage />} />
         <Route path='ships/:shipId' element={<ShipInfo />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
-    </>
+    </BrowserRouter>
   );
 };
 
